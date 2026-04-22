@@ -1,0 +1,117 @@
+/* ==================================================
+   LOGIN PAGE
+================================================== */
+/* 로그인 영역 */
+#login {
+  min-height: 60vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+/* 로그인 박스 */
+.login-wrap {
+  max-width: 500px;
+  width: 100%;
+}
+
+/* ==================================================
+   TABS
+================================================== */
+/* 탭 전체 라인 */
+.nav-tabs {
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* 탭 기본 */
+.nav-tabs .nav-link {
+  position: relative;
+  margin-bottom: -1px;
+  border: 1px solid transparent;
+  border: 1px solid #dee2e6;
+  color: #666;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  height: 50px;
+}
+
+/* hover */
+.nav-tabs .nav-link:hover {
+  color: var(--color-primary);
+}
+
+/* active */
+.nav-tabs .nav-link.active {
+  color: var(--color-primary);
+  border: 1px solid #dee2e6;
+  border-bottom: 1px solid #fff;
+}
+
+/* ==================================================
+   INPUT
+================================================== */
+/* input 공통 */
+.input-group-text {
+  background-color: #fff;
+}
+
+.login-input {
+  height: 52px;
+  font-size: 1rem !important;
+}
+
+.form-control::placeholder {
+  font-size: 1rem !important;
+  color: #999;
+}
+
+.form-control::-webkit-input-placeholder {
+  font-size: 0.8rem;
+}
+
+.form-control:-ms-input-placeholder {
+  font-size: 0.8rem;
+}
+
+/* focus */
+.form-control:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.15);
+}
+
+/* ==================================================
+   LOGIN BUTTON
+================================================== */
+.btn-login {
+  height: 52px;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.btn-login:hover {
+  filter: brightness(0.95);
+}
+
+/* ==================================================
+   SOCIAL LOGIN
+================================================== */
+.social_login {
+  margin-top: 40px;
+}
+
+.social-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-col .social-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 44px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}

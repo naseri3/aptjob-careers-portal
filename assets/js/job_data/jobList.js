@@ -1,0 +1,696 @@
+/*
+export const jobList = [
+  {
+    id: 1,
+    title: "전기기사 구인",
+    area: "서울 > 서초구",
+    position: "전기과장",
+    salary: "월급300만원 (세전)",
+    complexName: "서초 래미안 아파트",
+    complexSize: 420,
+    deadline: "채용시까지",
+    isClosed: false
+  },
+  {
+    id: 2,
+    title: "관리소장 채용 (경력)",
+    area: "서울 > 강남구",
+    position: "관리소장",
+    salary: "월급450만원 (세전)",
+    complexName: "강남 푸르지오",
+    complexSize: 980,
+    deadline: "채용시까지",
+    isClosed: false
+  },
+  {
+    id: 3,
+    title: "시설과장 모집",
+    area: "경기 > 성남시",
+    position: "시설과장",
+    salary: "월급380만원 (세전)",
+    complexName: "판교 힐스테이트",
+    complexSize: 720,
+    deadline: "채용시까지",
+    isClosed: false
+  },
+  {
+    id: 4,
+    title: "경비반장 모집",
+    area: "서울 > 송파구",
+    position: "경비반장",
+    salary: "월급260만원 (세전)",
+    complexName: "잠실 리센츠",
+    complexSize: 560,
+    deadline: "2026-06-10",
+    isClosed: true
+  },
+  {
+    id: 5,
+    title: "전기주임 채용",
+    area: "경기 > 고양시",
+    position: "전기주임",
+    salary: "월급310만원 (세전)",
+    complexName: "일산 두산위브",
+    complexSize: 830,
+    deadline: "2026-05-30",
+    isClosed: false
+  },
+  {
+    id: 6,
+    title: "관리과장 모집",
+    area: "인천 > 연수구",
+    position: "관리과장",
+    salary: "월급360만원 (세전)",
+    complexName: "송도 더샵",
+    complexSize: 1100,
+    deadline: "2026-05-30",
+    isClosed: false
+  },
+  {
+    id: 7,
+    title: "시설관리 직원 채용",
+    area: "부산 > 해운대구",
+    position: "시설관리",
+    salary: "월급280만원 (세전)",
+    complexName: "해운대 아이파크",
+    complexSize: 640,
+    deadline: "2026-05-22",
+    isClosed: true
+  },
+  {
+    id: 8,
+    title: "관리소장 채용",
+    area: "대구 > 수성구",
+    position: "관리소장",
+    salary: "월급430만원 (세전)",
+    complexName: "수성 범어자이",
+    complexSize: 900,
+    deadline: "2026-05-22",
+    isClosed: false
+  },
+  {
+    id: 9,
+    title: "전기기사 경력직",
+    area: "광주 > 북구",
+    position: "전기기사",
+    salary: "월급320만원 (세전)",
+    complexName: "광주 센트럴파크",
+    complexSize: 510,
+    deadline: "2026-05-20",
+    isClosed: false
+  },
+  {
+    id: 10,
+    title: "경비원 모집",
+    area: "대전 > 서구",
+    position: "경비원",
+    salary: "월급250만원 (세전)",
+    complexName: "둔산 크로바",
+    complexSize: 480,
+    deadline: "2026-05-19",
+    isClosed: true
+  },
+
+  {
+    id: 11,
+    title: "관리과장 채용",
+    area: "서울 > 마포구",
+    position: "관리과장",
+    salary: "월급370만원 (세전)",
+    complexName: "마포 래미안",
+    complexSize: 690,
+    deadline: "2026-05-27",
+    isClosed: false
+  },
+  {
+    id: 12,
+    title: "시설관리 주임",
+    area: "경기 > 용인시",
+    position: "시설주임",
+    salary: "월급300만원 (세전)",
+    complexName: "동백 자이",
+    complexSize: 760,
+    deadline: "채용시까지",
+    isClosed: false
+  },
+  {
+    id: 13,
+    title: "전기기사 채용",
+    area: "서울 > 노원구",
+    position: "전기기사",
+    salary: "월급340만원 (세전)",
+    complexName: "중계 그린아파트",
+    complexSize: 540,
+    deadline: "2026-05-23",
+    isClosed: false
+  },
+  {
+    id: 14,
+    title: "경리(회계) 모집",
+    area: "서울 > 강서구",
+    position: "경리",
+    salary: "월급260만원 (세전)",
+    complexName: "마곡 엘지사이언스파크",
+    complexSize: 310,
+    deadline: "2026-05-16",
+    isClosed: true
+  },
+  {
+    id: 15,
+    title: "관리소장 채용 (대단지)",
+    area: "서울 > 노원구",
+    position: "관리소장",
+    salary: "월급480만원 (세전)",
+    complexName: "노원 중계그린",
+    complexSize: 1500,
+    deadline: "채용시까지",
+    isClosed: false
+  },
+
+  {
+    id: 16,
+    title: "시설과장 채용",
+    area: "경기 > 오산시",
+    position: "시설과장",
+    salary: "월급309만원 (세전)",
+    complexName: "세교 한신더휴",
+    complexSize: 849,
+    deadline: "2026-05-23",
+    isClosed: false
+  },
+  {
+    id: 17,
+    title: "시설기사 모집",
+    area: "경기 > 파주시",
+    position: "시설기사",
+    salary: "월급334만원 (세전)",
+    complexName: "가람마을 10단지",
+    complexSize: 972,
+    deadline: "2026-05-30",
+    isClosed: true
+  },
+  {
+    id: 18,
+    title: "관리소장 모집",
+    area: "울산 > 중구",
+    position: "관리소장",
+    salary: "월급434만원 (세전)",
+    complexName: "우정에이치1단지",
+    complexSize: 736,
+    deadline: "2026-06-10",
+    isClosed: true
+  },
+  {
+    id: 19,
+    title: "전기과장 채용",
+    area: "경기 > 수원시 장안구",
+    position: "전기과장",
+    salary: "월급352만원 (세전)",
+    complexName: "조원주공뉴타운2단지",
+    complexSize: 1586,
+    deadline: "2026-05-23",
+    isClosed: false
+  },
+  {
+    id: 20,
+    title: "시설관리 모집",
+    area: "부산 > 해운대구",
+    position: "시설관리",
+    salary: "월급316만원 (세전)",
+    complexName: "해운대아이파크",
+    complexSize: 1631,
+    deadline: "채용시까지",
+    isClosed: false
+  },
+
+  {
+    id: 21,
+    title: "경비원 채용",
+    area: "서울 > 중랑구",
+    position: "경비원",
+    salary: "월급281만원 (세전)",
+    complexName: "신내동 하이츠",
+    complexSize: 704,
+    deadline: "2026-06-30",
+    isClosed: false
+  },
+  {
+    id: 22,
+    title: "전기기사 모집",
+    area: "충북 > 청주시 상당구",
+    position: "전기기사",
+    salary: "월급256만원 (세전)",
+    complexName: "청원 리버타워",
+    complexSize: 330,
+    deadline: "채용시까지",
+    isClosed: true
+  },
+  {
+    id: 23,
+    title: "관리과장 모집",
+    area: "경기 > 고양시 덕양구",
+    position: "관리과장",
+    salary: "월급401만원 (세전)",
+    complexName: "도래울마을",
+    complexSize: 1392,
+    deadline: "채용시까지",
+    isClosed: true
+  },
+  {
+    id: 24,
+    title: "시설주임 채용",
+    area: "경기 > 김포시",
+    position: "시설주임",
+    salary: "월급290만원 (세전)",
+    complexName: "한강신도시 자이",
+    complexSize: 820,
+    deadline: "2026-05-26",
+    isClosed: false
+  },
+  {
+    id: 25,
+    title: "관리소장 채용",
+    area: "서울 > 성북구",
+    position: "관리소장",
+    salary: "월급460만원 (세전)",
+    complexName: "길음 뉴타운",
+    complexSize: 1200,
+    deadline: "2026-05-30",
+    isClosed: false
+  },
+
+  {
+    id: 26,
+    title: "전기기사 채용",
+    area: "경기 > 남양주시",
+    position: "전기기사",
+    salary: "월급330만원 (세전)",
+    complexName: "다산 자이",
+    complexSize: 980,
+    deadline: "2026-05-20",
+    isClosed: false
+  },
+  {
+    id: 27,
+    title: "경비반장 모집",
+    area: "서울 > 동작구",
+    position: "경비반장",
+    salary: "월급270만원 (세전)",
+    complexName: "흑석 한강센트레빌",
+    complexSize: 560,
+    deadline: "2026-05-22",
+    isClosed: true
+  },
+  {
+    id: 28,
+    title: "시설과장 채용",
+    area: "인천 > 부평구",
+    position: "시설과장",
+    salary: "월급390만원 (세전)",
+    complexName: "부평 아이파크",
+    complexSize: 840,
+    deadline: "2026-06-20",
+    isClosed: false
+  },
+  {
+    id: 29,
+    title: "관리과장 모집",
+    area: "경기 > 안양시",
+    position: "관리과장",
+    salary: "월급410만원 (세전)",
+    complexName: "평촌 자이",
+    complexSize: 910,
+    deadline: "2026-05-22",
+    isClosed: false
+  },
+  {
+    id: 30,
+    title: "전기주임 채용",
+    area: "서울 > 관악구",
+    position: "전기주임",
+    salary: "월급310만원 (세전)",
+    complexName: "봉천 래미안",
+    complexSize: 600,
+    deadline: "2026-05-30",
+    isClosed: false
+  },
+
+  {
+    id: 31,
+    title: "시설관리 직원 모집",
+    area: "경기 > 군포시",
+    position: "시설관리",
+    salary: "월급285만원 (세전)",
+    complexName: "산본 주공",
+    complexSize: 740,
+    deadline: "2026-05-21",
+    isClosed: false
+  },
+  {
+    id: 32,
+    title: "관리소장 채용",
+    area: "서울 > 은평구",
+    position: "관리소장",
+    salary: "월급440만원 (세전)",
+    complexName: "불광 힐스테이트",
+    complexSize: 1020,
+    deadline: "2026-05-27",
+    isClosed: false
+  },
+  {
+    id: 33,
+    title: "전기기사 채용",
+    area: "경기 > 시흥시",
+    position: "전기기사",
+    salary: "월급335만원 (세전)",
+    complexName: "배곧 자이",
+    complexSize: 890,
+    deadline: "2026-05-20",
+    isClosed: false
+  },
+  {
+    id: 34,
+    title: "경비원 모집",
+    area: "서울 > 강북구",
+    position: "경비원",
+    salary: "월급255만원 (세전)",
+    complexName: "미아 두산위브",
+    complexSize: 520,
+    deadline: "2026-05-22",
+    isClosed: true
+  },
+  {
+    id: 35,
+    title: "시설과장 채용",
+    area: "경기 > 화성시",
+    position: "시설과장",
+    salary: "월급395만원 (세전)",
+    complexName: "동탄 센트럴파크",
+    complexSize: 950,
+    deadline: "2026-05-22",
+    isClosed: false
+  },
+
+  {
+    id: 36,
+    title: "관리과장 모집",
+    area: "서울 > 양천구",
+    position: "관리과장",
+    salary: "월급365만원 (세전)",
+    complexName: "목동 신시가지",
+    complexSize: 780,
+    deadline: "2026-05-26",
+    isClosed: false
+  },
+  {
+    id: 37,
+    title: "전기주임 채용",
+    area: "경기 > 광명시",
+    position: "전기주임",
+    salary: "월급315만원 (세전)",
+    complexName: "철산 푸르지오",
+    complexSize: 690,
+    deadline: "2026-05-23",
+    isClosed: false
+  },
+  {
+    id: 38,
+    title: "시설관리 직원 모집",
+    area: "부산 > 수영구",
+    position: "시설관리",
+    salary: "월급295만원 (세전)",
+    complexName: "광안 센텀파크",
+    complexSize: 610,
+    deadline: "2026-06-10",
+    isClosed: true
+  },
+  {
+    id: 39,
+    title: "관리소장 채용",
+    area: "서울 > 중구",
+    position: "관리소장",
+    salary: "월급470만원 (세전)",
+    complexName: "서울역 센트럴자이",
+    complexSize: 1180,
+    deadline: "2026-06-30",
+    isClosed: false
+  },
+  {
+    id: 40,
+    title: "전기기사 채용",
+    area: "경기 > 하남시",
+    position: "전기기사",
+    salary: "월급340만원 (세전)",
+    complexName: "미사 강변센트럴",
+    complexSize: 860,
+    deadline: "2026-06-10",
+    isClosed: false
+  },
+
+  {
+    id: 41,
+    title: "경비반장 모집",
+    area: "서울 > 동대문구",
+    position: "경비반장",
+    salary: "월급275만원 (세전)",
+    complexName: "장안 래미안",
+    complexSize: 580,
+    deadline: "2026-05-19",
+    isClosed: true
+  },
+  {
+    id: 42,
+    title: "시설과장 채용",
+    area: "경기 > 안산시",
+    position: "시설과장",
+    salary: "월급385만원 (세전)",
+    complexName: "고잔 롯데캐슬",
+    complexSize: 910,
+    deadline: "2026-05-30",
+    isClosed: false
+  },
+  {
+    id: 43,
+    title: "관리과장 모집",
+    area: "서울 > 금천구",
+    position: "관리과장",
+    salary: "월급355만원 (세전)",
+    complexName: "독산 한신아파트",
+    complexSize: 720,
+    deadline: "2026-05-26",
+    isClosed: false
+  },
+  {
+    id: 44,
+    title: "전기주임 채용",
+    area: "경기 > 이천시",
+    position: "전기주임",
+    salary: "월급320만원 (세전)",
+    complexName: "이천 센트럴자이",
+    complexSize: 650,
+    deadline: "2026-05-20",
+    isClosed: false
+  },
+  {
+    id: 45,
+    title: "시설관리 직원 모집",
+    area: "부산 > 남구",
+    position: "시설관리",
+    salary: "월급285만원 (세전)",
+    complexName: "대연 힐스테이트",
+    complexSize: 700,
+    deadline: "2026-05-21",
+    isClosed: false
+  },
+
+  {
+    id: 46,
+    title: "관리소장 채용",
+    area: "서울 > 종로구",
+    position: "관리소장",
+    salary: "월급460만원 (세전)",
+    complexName: "광화문 센트럴파크",
+    complexSize: 1120,
+    deadline: "2026-05-22",
+    isClosed: false
+  },
+  {
+    id: 47,
+    title: "전기기사 채용",
+    area: "경기 > 평택시",
+    position: "전기기사",
+    salary: "월급335만원 (세전)",
+    complexName: "고덕 자이",
+    complexSize: 890,
+    deadline: "2026-06-10",
+    isClosed: false
+  },
+  {
+    id: 48,
+    title: "경비원 모집",
+    area: "서울 > 도봉구",
+    position: "경비원",
+    salary: "월급250만원 (세전)",
+    complexName: "쌍문 한양아파트",
+    complexSize: 540,
+    deadline: "2026-05-22",
+    isClosed: true
+  },
+  {
+    id: 49,
+    title: "시설과장 채용",
+    area: "경기 > 구리시",
+    position: "시설과장",
+    salary: "월급390만원 (세전)",
+    complexName: "갈매 센트럴파크",
+    complexSize: 930,
+    deadline: "채용시까지",
+    isClosed: false
+  },
+  {
+    id: 50,
+    title: "관리과장 모집",
+    area: "서울 > 강동구",
+    position: "관리과장",
+    salary: "월급365만원 (세전)",
+    complexName: "고덕 래미안",
+    complexSize: 780,
+    deadline: "채용시까지",
+    isClosed: false
+  }
+];
+*/
+
+
+export const jobList = [
+    {
+        id: 1,
+        title: "관리소장 채용",
+        complexName: "한강푸르지오 1단지",
+        area: "서울 > 영등포구",
+        position: "관리소장",
+        salary: "월급 420만원",
+        deadline: "2026-03-15",
+        createdAt: "2026-02-01",
+        isFav: false,
+        isClosed: false
+    },
+    {
+        id: 2,
+        title: "전기기사 모집",
+        complexName: "래미안 센트럴",
+        area: "서울 > 동작구",
+        position: "전기기사",
+        salary: "월급 380만원",
+        deadline: "2026-03-20",
+        createdAt: "2026-02-02",
+        isFav: false,
+        isClosed: false
+    },
+    {
+        id: 3,
+        title: "시설과장 채용",
+        complexName: "힐스테이트 판교",
+        area: "경기 > 성남시",
+        position: "시설과장",
+        salary: "월급 450만원",
+        deadline: "채용시까지",
+        createdAt: "2026-02-03",
+        isFav: false,
+        isClosed: false
+    },
+    {
+        id: 4,
+        title: "경비원 모집",
+        complexName: "자이 아파트",
+        area: "경기 > 수원시",
+        position: "경비원",
+        salary: "월급 260만원",
+        deadline: "2026-03-10",
+        createdAt: "2026-02-04",
+        isFav: false,
+        isClosed: false
+    },
+    {
+        id: 5,
+        title: "시설주임 채용",
+        complexName: "롯데캐슬 골드",
+        area: "서울 > 송파구",
+        position: "시설주임",
+        salary: "월급 310만원",
+        deadline: "2026-03-18",
+        createdAt: "2026-02-05",
+        isFav: false,
+        isClosed: false
+    },
+
+    /* =========================
+       6 ~ 100 (패턴 유지)
+    ========================= */
+    ...Array.from({ length: 95 }).map((_, i) => {
+        const id = i + 6;
+        const positions = [
+            "소장",
+            "관리과장",
+            "관리주임",
+            "경리(회계)",
+            "사무직",
+            "기술과장",
+            "전기직",
+            "전기과장",
+            "전기기사",
+            "설비직(영선)",
+            "시설과장",
+            "시설기사",
+            "기전직",
+            "조경",
+            "경비",
+            "미화",
+            "기타"
+        ];
+        const areas = [
+            // 서울
+            "서울 > 강남구",
+            "서울 > 강동구",
+            "서울 > 강서구",
+            "서울 > 관악구",
+            "서울 > 광진구",
+            "서울 > 구로구",
+            "서울 > 노원구",
+            "서울 > 동대문구",
+            "서울 > 마포구",
+            "서울 > 송파구",
+            "서울 > 영등포구",
+
+            // 경기
+            "경기 > 수원시",
+            "경기 > 성남시",
+            "경기 > 고양시",
+            "경기 > 용인시",
+            "경기 > 남양주시",
+            "경기 > 부천시",
+            "경기 > 화성시",
+
+            // 광역시
+            "부산 > 해운대구",
+            "부산 > 수영구",
+            "대구 > 수성구",
+            "인천 > 연수구",
+            "광주 > 북구",
+            "대전 > 유성구",
+            "울산 > 남구"
+        ];
+        return {
+            id,
+            title: `${positions[id % 5]} 채용`,
+            complexName: `테스트 아파트 ${id}단지`,
+            area: areas[id % areas.length],
+            position: positions[id % positions.length],
+            salary: `월급 ${260 + (id % 10) * 20}만원`,
+            deadline: id % 4 === 0 ? "채용시까지" : `2026-03-${(id % 28) + 1}`,
+            createdAt: `2026-02-${(id % 28) + 1}`,
+            isFav: false,
+            isClosed: false
+        };
+    })
+];

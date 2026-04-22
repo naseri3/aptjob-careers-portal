@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>채용 정보 상세페이지 | 아파트잡</title>
+    <!-- bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Font Awesome (권장 CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/assets/css/component.css">
+    <link rel="stylesheet" href="/assets/css/careers.css">
+</head>
+
+<body>
+    <main id="pages" class="subPage">
+        <section id="companyDetail" class="container company-hero">
+            <div class="row company-hero__header">
+                <div class="col company-hero__title d-flex justify-content-start">
+                    <a href="/careers.html" class="text-decoration-none"><h3>(주)더씨앤</h3></a>
+                </div>
+                <div class="col company-hero__home-btn d-flex justify-content-end gap-3 align-items-center">
+                    <a href="login.html" class="company-hero__login d-flex align-items-center gap-2">
+                        <img src="/assets/img/iconoir_user.png" width="20">로그인
+                    </a>
+                    <a href="https://thecn.co.kr/index.php" target="_blank" class="btn btn-outline company-hero__btn">기업 홈페이지 바로가기</a>
+                </div>
+            </div>
+            <!-- 배너 영역 -->
+            <div class="row company-hero__banner">
+                <!-- 좌측 로고 -->
+                <div class=" col-2 company-hero__logo-box">
+                    <img src="/assets/img/brand4.png" alt="" class="company-hero__logo">
+                </div>
+                <!-- 텍스트 -->
+                <div class="col-8 company-hero__content">
+                    <p class="company-hero__headline">
+                        공동주택 관리의 기준을 만들어온 전문 관리기업 채용관
+                    </p>
+                    <p class="company-hero__desc">
+                        체계적인 시스템과 현장 중심 운영으로 신뢰받는 관리 서비스를 이어갑니다
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="subPage" class="job-detail container my-5">
+            <h2 class="mb-3 fw-bold">채용정보</h2>
+
+            <!-- 채용 요약 정보 -->
+            <div class="mb-4 job-summary">
+                <h4 class="mb-1">압구정신현대</h4>
+                <h3 class="mb-4">서울_전기과장_경력
+                    <span class="endDate">2026-04-01 ~ 2026-12-31</span>
+                </h3>
+
+                <div class="row g-3 job-summary-group">
+                    <div class="col-md-4 col-sm-3 mt-0 job-summaryBox-requirement">
+                        <h6 class="fw-bold">지원조건</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li>직무 : 전기과장</li>
+                            <li>경력 : 경력 5년 이상</li>
+                            <li>학력 : 고졸이상</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-4 mt-0 job-summaryBox-condition">
+                        <h6 class="fw-bold">근무조건</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li>급여 : 월급 4,666,350원(세전)</li>
+                            <li>근무지역 : 서울특별시 강남구</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-3 mt-0 job-summaryBox-complex">
+                        <h6 class="fw-bold">단지정보</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li>아파트명 : 압구정신현대</li>
+                            <li>단지규모 : 1924세대</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 목록보기, 지원하기, 즐겨찾기, 인쇄하기 버튼 -->
+            <div class="text-center mb-5">
+                <button class="btn btn-secondary px-5 me-2 job-action-list">목록보기</button>
+                <button class="btn btn-primary px-5 me-2 job-action-apply">지원하기</button>
+                <button class="btn btn-secondary px-5 me-2 job-action-favorite">★ 즐겨찾기</button>
+                <button class="btn btn-secondary px-5 job-action-print">인쇄하기</button>
+            </div>
+
+            <!-- 탭 -->
+            <ul class="nav nav-tabs" id="jobTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="detail-tab" data-bs-toggle="tab" data-bs-target="#detail"
+                        type="button" role="tab">모집요강</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="complex-tab" data-bs-toggle="tab" data-bs-target="#complex"
+                        type="button" role="tab">근무지정보</button>
+                </li>
+            </ul>
+
+            <div class="tab-content border border-top-0 p-4 bg-white rounded-bottom" id="jobTabContent">
+                <!-- 상세요강 -->
+                <div class="tab-pane fade show active" id="detail" role="tabpanel" aria-labelledby="detail-tab">
+                    <table class="table table-bordered align-middle job-detail__table">
+                        <tbody>
+                            <tr>
+                                <th>아파트명</th>
+                                <td>시흥장현제일풍경채에듀</td>
+                                <th>단지규모</th>
+                                <td>489세대</td>
+                            </tr>
+                            <tr>
+                                <th>근무지 주소</th>
+                                <td colspan="3">경기도 시흥시 장현동 82-2 시흥장현제일풍경채에듀</td>
+                            </tr>
+                            <tr>
+                                <th>모집직무</th>
+                                <td>기전직</td>
+                                <th>모집인원</th>
+                                <td>1명</td>
+                            </tr>
+                            <tr>
+                                <th>급여</th>
+                                <td>월급 3,240,000원 (세전)</td>
+                                <th>고용형태</th>
+                                <td>계약직</td>
+                            </tr>
+                            <tr>
+                                <th>경력</th>
+                                <td>제한없음</td>
+                                <th>학력</th>
+                                <td>제한없음</td>
+                            </tr>
+                            <tr>
+                                <th>관리형태</th>
+                                <td>위탁 관리 / 울산개발</td>
+                                <th>근무방식</th>
+                                <td>격일</td>
+                            </tr>
+                            <tr>
+                                <th>자격요건</th>
+                                <td colspan="3">제한없음</td>
+                            </tr>
+                            <tr>
+                                <th>우대사항</th>
+                                <td colspan="3">913432</td>
+                            </tr>
+                            <tr>
+                                <th>제출서류</th>
+                                <td colspan="3">이력서</td>
+                            </tr>
+                            <tr>
+                                <th>복리후생</th>
+                                <td colspan="3">퇴직금, 연차수당, 하계휴가비, 명절보너스, 기타</td>
+                            </tr>
+                            <tr>
+                                <th>상세정보</th>
+                                <td colspan="3">
+                                    <p>기타 특이사항 없음</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 단지정보 -->
+                <div class="tab-pane fade" id="complex" role="tabpanel" aria-labelledby="complex-tab">
+                    <div class="job-complex__wrap">
+                        <!-- 상단 제목 -->
+                        <h6 class="complex-header-title">근무지정보 (K-APT 기준)</h6>
+                        <!-- (1) 기본정보 -->
+                        <table class="table table-bordered align-middle job-complex__table mb-4">
+                            <thead>
+                                <tr>
+                                    <th colspan="2" class="table-section-title w-50">(1) 기본 정보</th>
+                                    <th colspan="2" class="table-section-subtitle w-50 border-start-0">※ 본 정보는 K-APT
+                                        기반으로 제공되며, 실제와 다를 수 있습니다</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>기업명</th>
+                                    <td>한국지엠(주)사원임대아파트</td>
+                                    <th>단지코드</th>
+                                    <td>아파트</td>
+                                </tr>
+                                <tr>
+                                    <th>주소</th>
+                                    <td colspan="3">인천광역시 서구 봉오대로 331</td>
+                                </tr>
+                                <tr>
+                                    <th>세대수</th>
+                                    <td>320.0</td>
+                                    <th>분양형태</th>
+                                    <td>사택 및 관사 등</td>
+                                </tr>
+                                <tr>
+                                    <th>분양세대</th>
+                                    <td>320.0</td>
+                                    <th>임대세대</th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th>임대세대(공공)</th>
+                                    <td>0</td>
+                                    <th>임대세대(민간)</th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th>사용승인일</th>
+                                    <td>19900702</td>
+                                    <th>우편번호</th>
+                                    <td>22716</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- (2) 근무직원 -->
+                        <table class="table table-bordered align-middle job-complex__table mb-4">
+                            <thead>
+                                <tr>
+                                    <th colspan="4" class="table-section-title">(2) 근무직원</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>총인원</th>
+                                    <td colspan="3">14명</td>
+                                </tr>
+                                <tr>
+                                    <th>일반관리</th>
+                                    <td>5명</td>
+                                    <td>위탁관리</td>
+                                    <td>월드와이드써비스코리아</td>
+                                </tr>
+                                <tr>
+                                    <th>경비관리</th>
+                                    <td>5명</td>
+                                    <td>위탁관리</td>
+                                    <td>월드와이드써비스코리아</td>
+                                </tr>
+                                <tr>
+                                    <th>청소관리</th>
+                                    <td>5명</td>
+                                    <td>위탁관리</td>
+                                    <td>월드와이드써비스코리아</td>
+                                </tr>
+                                <tr>
+                                    <th>연간소독횟수</th>
+                                    <td>2회/년</td>
+                                    <td>위탁관리</td>
+                                    <td>월드와이드써비스코리아</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- (3) 단지정보 -->
+                        <table class="table table-bordered align-middle job-complex__table">
+                            <thead>
+                                <tr>
+                                    <th colspan="4" class="table-section-title">(3) 단지정보</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>단지분류</th>
+                                    <td>아파트</td>
+                                    <th>동수</th>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <th>난방방식</th>
+                                    <td>개별난방</td>
+                                    <th>음식물처리방법</th>
+                                    <td>차량수거방식</td>
+                                </tr>
+                                <tr>
+                                    <th>건물구조</th>
+                                    <td>철근콘크리트구조</td>
+                                    <th>전기-수전용량</th>
+                                    <td>66</td>
+                                </tr>
+                                <tr>
+                                    <th>전기-세대전기계약방식</th>
+                                    <td>단일계약</td>
+                                    <th>전기안전관리자선임여부</th>
+                                    <td>선정안함</td>
+                                </tr>
+                                <tr>
+                                    <th>화재수신방식</th>
+                                    <td>R형</td>
+                                    <th>급수방식</th>
+                                    <td>고가수조식</td>
+                                </tr>
+                                <tr>
+                                    <th>승각기관리방식</th>
+                                    <td>위탁관리</td>
+                                    <th>층 승강기대수</th>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <th>총주차대수</th>
+                                    <td>708</td>
+                                    <th>지상주차대수</th>
+                                    <td>189</td>
+                                </tr>
+                                <tr>
+                                    <th>지하주차대수</th>
+                                    <td>519</td>
+                                    <th>주차관제시스템</th>
+                                    <td>유</td>
+                                </tr>
+                                <tr>
+                                    <th>CCTV대수</th>
+                                    <td>62</td>
+                                    <th>홈네트워크</th>
+                                    <td>무</td>
+                                </tr>
+                                <tr>
+                                    <th>최고층수</th>
+                                    <td>15</td>
+                                    <th>지하층수</th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th>전기차전용주차면수(지상)</th>
+                                    <td>3</td>
+                                    <th>전기차전용주차면수(지하)</th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th>전기차충전시설대수(지상)</th>
+                                    <td>3</td>
+                                    <th>전기차충전시설대수(지하)</th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th>부대복지시설</th>
+                                    <td colspan="3">
+                                        관리사무소, 노인정, 어린이놀이터, 자전거보관소
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 지원하기, 즐겨찾기, 인쇄하기 버튼 -->
+            <div class="text-center mt-5">
+                <button class="btn btn-secondary px-5 me-2 job-action-list">목록보기</button>
+                <button class="btn btn-primary px-5 me-2 job-action-apply">지원하기</button>
+                <button class="btn btn-secondary px-5 me-2 job-action-favorite">★ 즐겨찾기</button>
+                <button class="btn btn-secondary px-5 job-action-print">인쇄하기</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer" class="site-footer"></footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top" aria-label="맨 위로 이동" title="맨 위로" type="button">
+        <!-- 단순한 화살표 아이콘 (SVG) -->
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 4l-8 8h5v8h6v-8h5z"></path>
+        </svg>
+    </button>
+
+
+    <script src="/assets/js/common.js"></script>
+    <script src="/assets/js/login.js"></script>
+    <script src="/assets/js/scrollIntoView.js"></script>
+    <script type="module" src="/assets/js/director-recruit.js"></script>
+    <script type="module" src="/assets/js/jobList.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
