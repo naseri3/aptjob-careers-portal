@@ -148,7 +148,7 @@ function getEmptyHTML() {
     return `<div class="empty-state">
     <i class="fa-regular fa-file-lines empty-state__icon"></i>
     <p class="empty-state__text">지원한 공고가 없습니다</p>
-    <a href="/subPage/search.html" class="empty-state__btn">공고 보러가기</a>
+    <a href="https://www.aptjob.net/subpage/recruit_search.html" class="empty-state__btn">공고 보러가기</a>
   </div>`;
 }
 
