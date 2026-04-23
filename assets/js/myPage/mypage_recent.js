@@ -2,13 +2,13 @@ const PAGE_SIZE = 12;
 
 /* 더미 데이터 */
 let recentJobs = [
-    { id: 901, complexName: "래미안 강남 프레스티지", title: "시설관리 기사 모집", area: "서울 강남구", salary: "월급 320만원", deadline: "2026-06-20", viewedAt: "2026-03-06T09:10:00" },
-    { id: 902, complexName: "힐스테이트 송파", title: "관리소장 채용", area: "서울 송파구", salary: "월급 520만원", deadline: "2026-06-18", viewedAt: "2026-06-06T08:30:00" },
-    { id: 903, complexName: "자이 마포 리버뷰", title: "시설관리 기사 모집", area: "서울 마포구", salary: "월급 300만원", deadline: "2026-06-15", viewedAt: "2026-06-05T22:00:00" },
-    { id: 904, complexName: "푸르지오 인천 센트럴", title: "경리 담당자 채용", area: "인천 연수구", salary: "월급 340만원", deadline: "2026-06-12", viewedAt: "2026-06-05T21:20:00" },
-    { id: 905, complexName: "롯데캐슬 대구 시그니처", title: "설비 기사 모집", area: "대구 수성구", salary: "월급 310만원", deadline: "2026-06-25", viewedAt: "2026-06-05T20:10:00" },
-    { id: 906, complexName: "더샵 센트럴파크", title: "관리소장 채용", area: "대전 서구", salary: "월급 500만원", deadline: "2026-06-14", viewedAt: "2026-06-05T18:00:00" },
-    { id: 907, complexName: "e편한세상 광교", title: "전기기사 모집", area: "경기 수원시", salary: "월급 330만원", deadline: "2026-06-28", viewedAt: "2026-06-05T16:00:00" },
+    { id: 901, complexName: "압구정신현대", title: "관리소장 경력직 채용", area: "서울 강남구", salary: "월급 360만원", deadline: "2026-06-20", viewedAt: "2026-03-06T09:10:00" },
+    // { id: 902, complexName: "힐스테이트 송파", title: "관리소장 채용", area: "서울 송파구", salary: "월급 520만원", deadline: "2026-06-18", viewedAt: "2026-06-06T08:30:00" },
+    // { id: 903, complexName: "자이 마포 리버뷰", title: "시설관리 기사 모집", area: "서울 마포구", salary: "월급 300만원", deadline: "2026-06-15", viewedAt: "2026-06-05T22:00:00" },
+    // { id: 904, complexName: "푸르지오 인천 센트럴", title: "경리 담당자 채용", area: "인천 연수구", salary: "월급 340만원", deadline: "2026-06-12", viewedAt: "2026-06-05T21:20:00" },
+    // { id: 905, complexName: "롯데캐슬 대구 시그니처", title: "설비 기사 모집", area: "대구 수성구", salary: "월급 310만원", deadline: "2026-06-25", viewedAt: "2026-06-05T20:10:00" },
+    // { id: 906, complexName: "더샵 센트럴파크", title: "관리소장 채용", area: "대전 서구", salary: "월급 500만원", deadline: "2026-06-14", viewedAt: "2026-06-05T18:00:00" },
+    // { id: 907, complexName: "e편한세상 광교", title: "전기기사 모집", area: "경기 수원시", salary: "월급 330만원", deadline: "2026-06-28", viewedAt: "2026-06-05T16:00:00" },
     /*
     { id: 908, complexName: "아이파크 삼성", title: "시설관리 주임 채용", area: "서울 강남구", salary: "월급 310만원", deadline: "2026-03-19", viewedAt: "2026-03-05T15:00:00" },
     { id: 909, complexName: "한화 포레나 인천연수", title: "아파트 경리 채용", area: "인천 연수구", salary: "월급 350만원", deadline: "2026-03-21", viewedAt: "2026-03-05T13:00:00" },

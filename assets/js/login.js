@@ -29,7 +29,7 @@ function testLogin() {
     alert("로그인 성공!");
 
     // careers 페이지 이동
-    location.href = "/careers.html";
+    location.href = "/mypage/mypage-resume.html";
   } else {
     alert("아이디 또는 비밀번호가 틀렸습니다.");
   }

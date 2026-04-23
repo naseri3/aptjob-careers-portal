@@ -181,6 +181,7 @@
     color: var(--color-primary);
     border-radius: 20px;
     padding: 3px 10px;
+    margin-left: 10px;
 }
 
 /* ===============================
@@ -1386,4 +1387,12 @@ input:checked + .resume-option__card {
     font-size: 0.8rem;
     color: #9ca3af;
     margin-top: 8px;
+}
+.resume-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.resume-link:hover {
+  text-decoration: underline;
 }

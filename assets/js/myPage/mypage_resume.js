@@ -43,7 +43,10 @@ function renderResumeList(list) {
                 <img src="${item.photo}" class="resume-card__photo">
                 <div class="resume-card__info">
                     <div class="resume-card__title">
-                        ${item.title}  ${item.isMain ? '<span class="resume-main-badge">대표</span>' : ''}
+                        <a href="/mypage/resume-view.html?id=${item.id}" class="resume-link">
+                            ${item.title}
+                        </a>
+                        ${item.isMain ? '<span class="resume-main-badge">대표</span>' : ''}
                     </div>
                     <div class="resume-card__meta">
                         최근 수정일 ${item.updatedAt}
