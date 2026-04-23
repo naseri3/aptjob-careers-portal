@@ -244,7 +244,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const isLogin = localStorage.getItem("isLogin") === "true";
         if (!isLogin) {
             sessionStorage.setItem("redirectAfterLogin", window.location.href);
-            window.location.href = "/subpage/login.html";
+            window.location.href = "/login.html";
             return;
         }
 
@@ -276,23 +276,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     // ✅ 페이지 로드 시 이미 지원한 공고는 “지원완료” 처리
     updateAppliedUIInFavorites();
 });
-
-
-/* =========================
-   모달 HTML 로드(중복 방지)
-========================= */
-async function ensureApplyModalsLoaded() {
-    if (document.getElementById("applyModal") && document.getElementById("applyDoneModal")) return;
-
-    try {
-        const res = await fetch("/assets/components/apply-modal.html");
-        const html = await res.text();
-        document.body.insertAdjacentHTML("beforeend", html);
-    } catch (err) {
-        console.warn("apply-modal 로드 실패", err);
-    }
-}
-
 
 /* =========================
    지원 상태(localStorage)
