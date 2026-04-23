@@ -1,7 +1,3 @@
-
-fetch("/assets/components/footer.html")
-    .then((a) => a.text())
-    .then((b) => (document.querySelector("#footer").innerHTML = b));
 document.addEventListener("DOMContentLoaded", () => {
     var a = document.getElementById("backToTop");
     if (!a) return;
