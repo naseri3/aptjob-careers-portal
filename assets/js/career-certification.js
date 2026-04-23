@@ -1,15 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
+
     // ================================
-    // 1️⃣ 인증 모달 (새로고침 시만 뜸)
+    // 1️⃣ 인증 모달
     // ================================
     const certModalEl = document.getElementById("certModal");
+    if (!certModalEl) return;
+
     const certModal = new bootstrap.Modal(certModalEl);
 
-    // 최초 진입시에만 실행
+    // 최초 1회
     if (!sessionStorage.getItem("certShown")) {
         certModal.show();
         sessionStorage.setItem("certShown", "true");
     }
+
+    // Shift + R 강제 실행
+    document.addEventListener("keydown", (e) => {
+        if (e.shiftKey && e.key.toLowerCase() === "r") {
+            e.preventDefault(); // 새로고침 방지
+            certModal.show();
+        }
+    });
 
 
     // ================================
@@ -19,23 +30,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const certStep2 = document.querySelector(".cert-step-2");
 
     if (certStep1 && certStep2) {
-
-        // STEP1 → STEP2
         certStep1.addEventListener("click", () => {
             certStep1.style.display = "none";
             certStep2.style.display = "block";
         });
 
-        // STEP2 → 페이지 이동
         certStep2.addEventListener("click", () => {
             window.location.href = "/mypage/resume-form.html";
         });
-
     }
 
 
     // ================================
-    // 3️⃣ 경력 모달 버튼
+    // 3️⃣ 경력 모달
     // ================================
     const importBtn = document.getElementById("importCareerBtn");
     const careerModalEl = document.getElementById("careerModal");
@@ -46,10 +53,9 @@ document.addEventListener("DOMContentLoaded", function () {
         importBtn.addEventListener("click", () => {
             careerModal.show();
 
-            // 👉 모달 클릭 시 페이지 이동
             careerModalEl.addEventListener("click", () => {
                 window.location.href = "/mypage/resume-form.html";
-            }, { once: true }); // 한 번만 실행
+            }, { once: true });
         });
     }
 
