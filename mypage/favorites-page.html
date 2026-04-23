@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>아파트잡 | 아파트 전문 구인구직 플랫폼</title>
+    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
+    <!-- bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Font Awesome (권장 CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/component.css">
+    <link rel="stylesheet" href="/assets/css/mypage.css">
+    <link rel="stylesheet" href="/assets/css/careers.css">
+</head>
+
+<body data-page="resume" data-header="sub">
+
+    <main id="pages" class="subPage resume-page">
+        <section id="companyDetail" class="container company-hero">
+            <div class="row company-hero__header">
+                <div class="col company-hero__title d-flex justify-content-start">
+                    <a href="/careers.html" class="text-decoration-none"><h3>(주)더씨앤</h3></a>
+                </div>
+                <div class="col company-hero__home-btn d-flex justify-content-end gap-3 align-items-center">
+                    <a href="login.html" class="company-hero__login d-flex align-items-center gap-2">
+                        <img src="/assets/img/iconoir_user.png" width="20">로그인
+                    </a>
+                     <a href="https://thecn.co.kr/index.php" target="_blank" class="btn btn-outline company-hero__btn">기업 홈페이지 바로가기</a>
+                </div>
+            </div>
+            <!-- 배너 영역 -->
+            <div class="row company-hero__banner">
+                <!-- 좌측 로고 -->
+                <div class=" col-2 company-hero__logo-box">
+                    <img src="/assets/img/brand4.png" alt="" class="company-hero__logo">
+                </div>
+                <!-- 텍스트 -->
+                <div class="col-8 company-hero__content">
+                    <p class="company-hero__headline">
+                        공동주택 관리의 기준을 만들어온 전문 관리기업 채용관
+                    </p>
+                    <p class="company-hero__desc">
+                        체계적인 시스템과 현장 중심 운영으로 신뢰받는 관리 서비스를 이어갑니다
+                    </p>
+                </div>
+            </div>
+        </section>
+
+         <div class="container">
+            <div class="row">
+                <!-- 좌측: 사이트 메뉴 -->
+                <aside class="col-12 col-lg-3">
+                    <nav class="mypage-menu">
+                        <h3 class="mypage-menu__title">마이페이지</h3>
+                        <ul class="mypage-menu__list">
+                            <li class="mypage-menu__item d-none d-lg-block">
+                                <a href="/myPage/mypage.html" class="mypage-menu__link">
+                                    <img src="/assets/icons/home-alt.svg">
+                                    <span class="menu-text">마이페이지 홈</span>
+                                </a>
+                            </li>
+                            <li class="mypage-menu__item">
+                                <a href="/myPage/mypage-resume.html" class="mypage-menu__link">
+                                    <img src="/assets/icons/page-edit.svg">
+                                    <span class="menu-text">이력서 관리 <strong id="statResume"
+                                            class="status-item">0</strong></span>
+                                </a>
+                            </li>
+                            <li class="mypage-menu__item">
+                                <a href="/myPage/mypage-applications.html" class="mypage-menu__link">
+                                    <img src="/assets/icons/submit-document.svg">
+                                    <span class="menu-text">지원 현황 <strong id="statApply"
+                                            class="status-item">0</strong></span>
+                                </a>
+                            </li>
+                            <li class="mypage-menu__item">
+                                <a href="/myPage/mypage-favorites.html" class="mypage-menu__link">
+                                    <img src="/assets/icons/page-star.svg">
+                                    <span class="menu-text">관심 공고 <strong id="statFavorite"
+                                            class="status-item">0</strong></span>
+                                </a>
+                            </li>
+                            <li class="mypage-menu__item">
+                                <a href="/myPage/mypage-recent.html" class="mypage-menu__link">
+                                    <img src="/assets/icons/page-search.svg">
+                                    <span class="menu-text">최근 본 공고 <strong id="statRecent"
+                                            class="status-item">0</strong></span>
+                                </a>
+                            </li>
+                            <li class="mypage-menu__item">
+                                <a href="/myPage/mypage-settings.html" class="mypage-menu__link">
+                                    <img src="/assets/icons/settings.svg">
+                                    <span class="menu-text">계정 설정</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <!-- 우측: 관심 공고 -->
+                <section class="col-12 col-lg-9">
+                    <div class="favorites">
+                        <div class="favorites__header mb-3">
+                            <h2 class="favorites__title mb-0" id="favoritesTitle">관심 공고 (0)</h2>
+                            <div class="favorites-filter">
+                                <select id="favoritesSort" class="form-select form-select-sm">
+                                    <option value="latest">최신순</option>
+                                    <option value="deadlineSoon">마감임박순</option>
+                                    <option value="deadlineLate">마감순</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- JS로 empty 또는 list 표시 -->
+                    <div class="favorites__content" id="favoritesList"></div>
+                    <div class="pagination-wrap" id="favoritesPagination"></div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+
+     <!-- footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-links">
+          <a href="#">이용약관</a> | 
+          <a href="#">개인정보처리방침</a> | 
+          <a href="#">FAQ</a> | 
+          <a href="#">기업회원 비밀번호 초기화</a>
+        </div>
+        <div class="footer-info">
+          <p>상호 : ㈜이테시스   |   대표전화 : 02-533-6311</p>
+          <p>대표 : 안현자   |   사업자등록번호 :  108-81-79912  |   주소 : 서울특별시 서초대로 방배천로2길 15, 5층 (방배동, 오륜빌딩)</p>
+          <p>통신판매업 신고번호: 2017-서울서초-0831  |   직업정보제공사업 신고번호 : 서울청 제 2024 – 5호</p>
+          <p>All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+     <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top" aria-label="맨 위로 이동" title="맨 위로" type="button">
+        <!-- 단순한 화살표 아이콘 (SVG) -->
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 4l-8 8h5v8h6v-8h5z"></path>
+        </svg>
+    </button>
+
+
+    <script src="/assets/js/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- 커스텀 JS (의존성 순서) -->
+    <script src="/assets/js/login.js"></script>
+    <script src="/assets/js/myPage/mypage_menu.js"></script>
+    <script src="/assets/js/myPage/mypage_favorites.js"></script>
+    <script src="/assets/js/myPage/mypage_filtering.js"></script>
+
+</html>
