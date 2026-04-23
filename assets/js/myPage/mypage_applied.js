@@ -69,7 +69,7 @@ function createAppliedCard(job) {
     <div class="applied-card__salary">${job.salary}</div>
     <div class="applied-card__btn">공고보기 ></div>
   `;
-    card.onclick = () => location.href = `/subPage/job-detail.html?id=${job.id}`;
+    card.onclick = () => location.href = `/job-detail.html?id=${job.id}`;
     return card;
 }
 

@@ -82,7 +82,7 @@ function createCard(job) {
             </div>
             <div class="recent-card__bottom">
                 <span class="recent-card__deadline">${getDday(job.deadline)}</span>
-                <a href="/subPage/job-detail.html?id=${job.id}" class="recent-card__btn">
+                <a href="/job-detail.html?id=${job.id}" class="recent-card__btn">
                 공고확인
                 </a>
             </div>

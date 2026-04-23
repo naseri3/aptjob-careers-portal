@@ -13,13 +13,13 @@ function createCard(job) {
   const card = document.createElement("div");
   card.className = "recommended-card";
   card.innerHTML = `
-    <div class="recommended-card__badge">추천 공고</div>
+    <div class="recommended-card__badge">최근 본 공고</div>
     <div class="recommended-card__complexName">${job.complexName}</div>
     <div class="recommended-card__title">${job.title}</div>
     <div class="recommended-card__meta">${job.area}</div>
     <div class="recommended-card__salary">${job.salary}</div>
     <div class="recommended-card__btn">공고확인 ></div>`;
-  card.onclick = () => location.href = `/subPage/job-detail.html?id=${job.id}`;
+  card.onclick = () => location.href = `/job-detail.html?id=${job.id}`;
   return card;
 }
 

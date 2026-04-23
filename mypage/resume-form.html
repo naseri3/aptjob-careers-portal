@@ -21,13 +21,44 @@
     <link rel="stylesheet" href="/assets/css/index.css">
     <link rel="stylesheet" href="/assets/css/component.css">
     <link rel="stylesheet" href="/assets/css/resume.css">
+    <link rel="stylesheet" href="/assets/css/careers.css">
 </head>
 
 <body data-page="resume-form" data-header="sub">
-    <!-- PC header -->
-    <header id="headerWrap"></header>
-
     <main id="pages" class="subPage resume-form">
+        <section id="companyDetail" class="container company-hero">
+            <div class="row company-hero__header">
+                <div class="col company-hero__title d-flex justify-content-start">
+                    <a href="/careers.html" class="text-decoration-none">
+                        <h3>(주)더씨앤</h3>
+                    </a>
+                </div>
+                <div class="col company-hero__home-btn d-flex justify-content-end gap-3 align-items-center">
+                    <a href="login.html" class="company-hero__login d-flex align-items-center gap-2">
+                        <img src="/assets/img/iconoir_user.png" width="20">로그인
+                    </a>
+                    <a href="https://thecn.co.kr/index.php" target="_blank" class="btn btn-outline company-hero__btn">기업
+                        홈페이지 바로가기</a>
+                </div>
+            </div>
+            <!-- 배너 영역 -->
+            <div class="row company-hero__banner">
+                <!-- 좌측 로고 -->
+                <div class=" col-2 company-hero__logo-box">
+                    <img src="/assets/img/brand4.png" alt="" class="company-hero__logo">
+                </div>
+                <!-- 텍스트 -->
+                <div class="col-8 company-hero__content">
+                    <p class="company-hero__headline">
+                        공동주택 관리의 기준을 만들어온 전문 관리기업 채용관
+                    </p>
+                    <p class="company-hero__desc">
+                        체계적인 시스템과 현장 중심 운영으로 신뢰받는 관리 서비스를 이어갑니다
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <section class="resume-page">
             <div class="container resume-container">
                 <header class="resume-header">
@@ -62,8 +93,7 @@
 
                                 <div class="resume-profile">
                                     <div class="resume-profile__preview">
-                                        <img id="profilePreview" src="/assets/img/profile-default.png"
-                                            alt="프로필 미리보기" />
+                                        <img id="profilePreview" src="/assets/img/profile-default.png" alt="프로필 미리보기" />
                                     </div>
 
                                     <div class="resume-profile__info">
@@ -234,7 +264,7 @@
                                 <div class="d-flex justify-content-end mb-3 gap-2">
                                     <button type="button" class="btn btn-outline-danger btn-sm resume-btn-import-career"
                                         id="importCareerBtn">
-                                        <img src="/assets/images/h-well.png" class="resume-btn-import-career__icon"> 경력
+                                        <img src="/assets/img/h-well.png" class="resume-btn-import-career__icon"> 경력
                                         불러오기
                                     </button>
                                     <button type="button" class="btn btn-outline-primary btn-sm resume-add-btn"
@@ -289,7 +319,7 @@
                                 </div>
 
                                 <div id="licenseList">
-                                    
+
                                 </div>
                             </div>
 
@@ -460,6 +490,42 @@
     </main>
 
 
+    <!-- 경력 불러오기 모달 -->
+    <div class="modal fade" id="careerModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content career_import">
+                <!-- 상단 -->
+                <div class="apply-header">
+                    <span class="apply-url">
+                        thecn.abc.com/api/career_import
+                    </span>
+                    <button type="button" class="apply-close" data-bs-dismiss="modal">✕</button>
+                </div>
+
+                <!-- 본문 -->
+                <div class="modal-body text-center career_import_content">
+
+                    <!-- 1️⃣ STEP -->
+                    <div class="career-step-1">
+                        <img src="/assets/img/kakao-certification-1.png" class="img-fluid career-img">
+                    </div>
+
+                    <!-- 2️⃣ STEP -->
+                    <div class="career-step-2" style="display:none;">
+                        <img src="/assets/img/kakao-certification-2.png" class="img-fluid career-img">
+                    </div>
+
+                    <!-- 3️⃣ STEP -->
+                    <div class="career-step-3" style="display:none;">
+                        <img src="/assets/img/career-certification.png" class="img-fluid career-img">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- PC footer -->
     <footer id="footer"></footer>
     <!-- Back to Top -->
@@ -471,6 +537,7 @@
     <script src="/assets/js/common.js"></script>
     <script src="/assets/js/resume/resume-form.js"></script>
     <script src="/assets/js/resume/resume.js"></script>
+    <script src="/assets/js/career-certification.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

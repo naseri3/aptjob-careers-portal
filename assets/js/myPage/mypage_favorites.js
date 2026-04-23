@@ -139,7 +139,7 @@ function createFavoriteCard(item) {
       </div>
 
       <div class="favorite-card__actions">
-        <a href="/subPage/job-detail.html?id=${item.id}" class="btn btn-outline-secondary favorite-card__view-btn">
+        <a href="/job-detail.html?id=${item.id}" class="btn btn-outline-secondary favorite-card__view-btn">
           공고보기
         </a>
         ${closed

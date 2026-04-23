@@ -4,8 +4,8 @@ const resumeListEl = document.getElementById("resumeList");
    더미 데이터
 =============================== */
 let resumeData = [
-    { id: 1, title: "시설관리 경력직 이력서", photo: "/assets/img/profile-user.png", updatedAt: "2026.02.26", isMain: true, represent: true },
-    { id: 2, title: "아파트 관리소장 지원 이력서", photo: "/assets/img/profile-default.png", updatedAt: "2026.02.24", isMain: false, represent: false },
+    // { id: 1, title: "시설관리 경력직 이력서", photo: "/assets/img/profile-user.png", updatedAt: "2026.02.26", isMain: true, represent: true },
+    { id: 2, title: "아파트 관리소장 이력서", photo: "/assets/img/user.png", updatedAt: "2026.04.15", isMain: true, represent: true },
     // { id: 3, title: "이력서 테스트", photo: "/assets/img/profile-default.png", updatedAt: "2026.03.01", isMain: false}
 ];
 
