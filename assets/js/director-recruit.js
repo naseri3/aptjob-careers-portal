@@ -184,10 +184,11 @@ function renderDirectorCards(list) {
             <a href="/job-detail.html?id=${item.id}" 
                class="director-card-link">
                 <div class="director-card">
-                    <div class="director-card__top">
+                    <div class="director-card__top d-flex justify-content-between">
                         <span class="director-card__company">
                             ${item.complexName}
                         </span>
+                        <span class="badge-sample">샘플 공고</span>
                     </div>
                     <h3 class="director-card__title">
                         ${item.title}

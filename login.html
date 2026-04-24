@@ -43,7 +43,8 @@
             <div class="row company-hero__banner">
                 <!-- 좌측 로고 -->
                 <div class=" col-2 company-hero__logo-box">
-                    <a href="/careers.html" class="text-decoration-none"><img src="/assets/img/brand4.png" alt="" class="company-hero__logo"></a>
+                    <a href="/careers.html" class="text-decoration-none"><img src="/assets/img/brand4.png" alt=""
+                            class="company-hero__logo"></a>
                 </div>
                 <!-- 텍스트 -->
                 <div class="col-8 company-hero__content">
@@ -70,8 +71,7 @@
                     </li>
                     <!-- 기업회원 -->
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="enterprise-tab" data-bs-toggle="tab"
-                            data-bs-target="#enterprise-pane" type="button" role="tab">
+                        <button class="nav-link" id="enterprise-tab" type="button" onclick="goEnterpriseLogin()">
                             기업회원
                         </button>
                     </li>
@@ -159,30 +159,46 @@
     </div>
 
 
-     <!-- footer -->
+   <!-- footer -->
     <footer class="site-footer">
-      <div class="footer-inner">
-        <div class="footer-links">
-          <a href="#">이용약관</a> | 
-          <a href="#">개인정보처리방침</a> | 
-          <a href="#">FAQ</a> | 
-          <a href="#">기업회원 비밀번호 초기화</a>
+        <div class="footer-inner">
+            <div class="footer-links">
+                <a href="#">이용약관</a> |
+                <a href="#">개인정보처리방침</a> |
+                <a href="#">FAQ</a> |
+                <a href="#">기업회원 비밀번호 초기화</a> |
+                <a id="companyInfoBtn" class="footer-company-btn">회사정보</a>
+
+                <!-- 펼쳐지는 영역 -->
+                <div id="footerInfoPanel" class="footer-info-panel">
+                    <p>상호 : ㈜이테시스 | 대표전화 : 02-533-6311</p>
+                    <p>대표 : 안현자 | 사업자등록번호 : 108-81-79912 | 주소 : 서울특별시 서초대로 방배천로2길 15, 5층 (방배동, 오륜빌딩)</p>
+                    <p>통신판매업 신고번호: 2017-서울서초-0831 | 직업정보제공사업 신고번호 : 서울청 제 2024 – 5호</p>
+                    <p>All rights reserved.</p>
+                </div>
+            </div>
         </div>
-        <div class="footer-info">
-          <p>상호 : ㈜이테시스   |   대표전화 : 02-533-6311</p>
-          <p>대표 : 안현자   |   사업자등록번호 :  108-81-79912  |   주소 : 서울특별시 서초대로 방배천로2길 15, 5층 (방배동, 오륜빌딩)</p>
-          <p>통신판매업 신고번호: 2017-서울서초-0831  |   직업정보제공사업 신고번호 : 서울청 제 2024 – 5호</p>
-          <p>All rights reserved.</p>
-        </div>
-      </div>
     </footer>
-     <!-- Back to Top -->
+    <!-- Back to Top -->
     <button id="backToTop" class="back-to-top" aria-label="맨 위로 이동" title="맨 위로" type="button">
         <!-- 단순한 화살표 아이콘 (SVG) -->
         <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
             <path d="M12 4l-8 8h5v8h6v-8h5z"></path>
         </svg>
     </button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const enterpriseTab = document.getElementById("enterprise-tab");
+
+            enterpriseTab?.addEventListener("click", function () {
+                window.open(
+                    "https://www.aptjob.net/subpage/login.html?check_type=2",
+                    "_blank"
+                );
+            });
+        });
+    </script>
 
 
     <script src="/assets/js/common.js"></script>

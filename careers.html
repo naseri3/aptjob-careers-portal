@@ -29,13 +29,16 @@
         <section id="companyDetail" class="container company-hero">
             <div class="row company-hero__header">
                 <div class="col company-hero__title d-flex justify-content-start">
-                    <a href="/careers.html" class="text-decoration-none"><h3>(주)더씨앤 인재 채용</h3></a>
+                    <a href="/careers.html" class="text-decoration-none">
+                        <h3>(주)더씨앤 인재 채용</h3>
+                    </a>
                 </div>
                 <div class="col company-hero__home-btn d-flex justify-content-end gap-3 align-items-center">
                     <a href="login.html" class="company-hero__login d-flex align-items-center gap-2">
                         <img src="/assets/img/iconoir_user.png" width="20">로그인
                     </a>
-                     <a href="https://thecn.co.kr/index.php" target="_blank" class="btn btn-outline company-hero__btn">기업 홈페이지 바로가기</a>
+                    <a href="https://thecn.co.kr/index.php" target="_blank" class="btn btn-outline company-hero__btn">기업
+                        홈페이지 바로가기</a>
                 </div>
             </div>
             <!-- 배너 영역 -->
@@ -132,8 +135,8 @@
                 <img src="/assets/img/recruitment-process.png" alt="" srcset="">
             </div>
             <p class="recruitment-process__text">일반적인 채용절차는 서류심사 > 면접전형 > 합격 순서로 이루어집니다.<BR>
-채용 전형 및 상황에 따라 채용 절차와 기준은 달라질 수 있습니다.
-</p>
+                채용 전형 및 상황에 따라 채용 절차와 기준은 달라질 수 있습니다.
+            </p>
         </section>
 
 
@@ -189,7 +192,25 @@
 
 
     <!-- footer -->
-    <footer id="footer" class="site-footer"></footer>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-links">
+                <a href="#">이용약관</a> |
+                <a href="#">개인정보처리방침</a> |
+                <a href="#">FAQ</a> |
+                <a href="#">기업회원 비밀번호 초기화</a> |
+                <a id="companyInfoBtn" class="footer-company-btn">회사정보</a>
+
+                <!-- 펼쳐지는 영역 -->
+                <div id="footerInfoPanel" class="footer-info-panel">
+                    <p>상호 : ㈜이테시스 | 대표전화 : 02-533-6311</p>
+                    <p>대표 : 안현자 | 사업자등록번호 : 108-81-79912 | 주소 : 서울특별시 서초대로 방배천로2길 15, 5층 (방배동, 오륜빌딩)</p>
+                    <p>통신판매업 신고번호: 2017-서울서초-0831 | 직업정보제공사업 신고번호 : 서울청 제 2024 – 5호</p>
+                    <p>All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Back to Top -->
     <button id="backToTop" class="back-to-top" aria-label="맨 위로 이동" title="맨 위로" type="button">
@@ -198,6 +219,25 @@
             <path d="M12 4l-8 8h5v8h6v-8h5z"></path>
         </svg>
     </button>
+
+
+
+    <!-- =========================
+  🔹 샘플 안내 모달
+========================= -->
+    <div id="sampleModal" class="sample-modal">
+        <div class="sample-modal__overlay"></div>
+        <div class="sample-modal__content">
+            <p>
+                이 페이지는 아파트잡 서비스 시연을 위한<br>
+                <strong style="color:#0d6efd;">샘플 테스트 페이지</strong>입니다.<br><br>
+
+                노출된 기업·공고·개인의 정보는<br>
+                실제 데이터와 무관한 예시입니다.
+            </p>
+            <button id="modalConfirmBtn" class="sample-modal__btn">확인</button>
+        </div>
+    </div>
 
 
     <script src="/assets/js/common.js"></script>

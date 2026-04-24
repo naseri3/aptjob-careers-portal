@@ -54,17 +54,16 @@ main {
     background-color: #f9fafc;
 }
 
-/* footer */
-footer {
-    width: 100%;
-    background: #fff;
-    border-top: 1px solid #d3d3d3 !important;
-}
+/* =========================
+   🔹 FOOTER
+========================= */
+footer,
 .site-footer {
     width: 100%;
     background: #fff;
     border-top: 1px solid #d3d3d3 !important;
 }
+
 .footer-inner {
     max-width: 1280px;
     margin: 0 auto;
@@ -72,26 +71,61 @@ footer {
     padding: 20px 0;
     font-size: 14px;
 }
-.footer-info p {
-    margin: 2px 5px;
-    line-height: 1.8;
-}
+
 .footer-links {
     margin-top: 10px;
     margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 28px;
 }
-.footer-links a {
+
+.footer-links a,
+.footer-company-btn {
     color: #333;
     text-decoration: none;
-    margin: 0 50px;
     font-weight: 700;
     font-size: 15px;
+    cursor: pointer;
 }
-.footer-links a:first-child {
-    margin-left: 0;
-}
-.footer-links a:hover {
+
+.footer-links a:hover,
+.footer-company-btn:hover {
     text-decoration: underline;
+}
+
+/* 회사정보 버튼 */
+.footer-company-btn {
+    display: inline-block;
+}
+
+/* 회사정보 클릭 시 나오는 영역 */
+.footer-info-panel {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    line-height: 1.8;
+}
+
+.footer-info-panel.show {
+    max-height: 200px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.footer-info-panel p {
+    margin: 2px 0;
+}
+.footer-links:has(.footer-info-panel.show) {
+    margin-bottom: 100px;
 }
 
 /* Top Button */

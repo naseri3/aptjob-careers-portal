@@ -38,7 +38,7 @@
     width: 1280px !important;
     margin: 20px auto 0;
     background-color: transparent;
-	z-index: 10 !important;
+    z-index: 10 !important;
 }
 .subPage h2 {
     font-size: 1.5rem;
@@ -116,11 +116,11 @@
     font-size: 1.5rem;
 }
 .company-hero__login {
-     border: 1px solid #bbbbbb;
-     padding: 8px 12px;
-     border-radius: 5px;
-     font-weight: bold;
-     color: #666;
+    border: 1px solid #bbbbbb;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #666;
 }
 .company-hero__btn {
     font-weight: bold;
@@ -319,6 +319,13 @@
 .process-img img {
     height: 200px;
 }
+.badge-sample {
+    background-color: rgb(153, 4, 4);
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 50px;
+    font-weight: 600;
+}
 
 /* ================================
    기업 공지사항 게시판 Wrapper
@@ -514,7 +521,7 @@
     background: #fff9f3;
 }
 
-.recruitment-process__img  img {
+.recruitment-process__img img {
     width: 80%;
 }
 .recruitment-process__text {
@@ -523,198 +530,203 @@
     text-align: center;
 }
 
-
 /* ================================
    채용공고 상세페이지
 ================================ */
 
 /* 상단 요약정보 */
 .job-summary {
-  border-top: 2px solid #0055DB;
-  padding-top: 40px;
+    border-top: 2px solid #0055db;
+    padding-top: 40px;
 }
 .job-summary h3 {
-  font-size: 2.2rem;
-  color: #202020;
+    font-size: 2.2rem;
+    color: #202020;
 }
 .job-summary h4 {
-  font-size: 1.5rem;
-  color: #696969;
+    font-size: 1.5rem;
+    color: #696969;
 }
 .endDate {
-  font-size: 1.4rem;
-  color: #e60000;
-  font-weight: 600;
-  float: right;
-  display: flex;
-  justify-content: center;
+    font-size: 1.4rem;
+    color: #e60000;
+    font-weight: 600;
+    float: right;
+    display: flex;
+    justify-content: center;
 }
 
 /* 요약정보 그룹 */
 .job-summary-group {
-  border-top: 1px solid #A8A8A8;
-  border-bottom: 1px solid #A8A8A8;
-  margin-top: 20px;
+    border-top: 1px solid #a8a8a8;
+    border-bottom: 1px solid #a8a8a8;
+    margin-top: 20px;
 }
 .job-summary-group h6 {
-  font-size: 1.2rem;
-  color: #202020;
-  margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #202020;
+    margin-bottom: 10px;
 }
 
 /* 지원조건, 근무조건, 단지정보 */
 .job-summaryBox-requirement,
 .job-summaryBox-condition,
 .job-summaryBox-complex {
-  line-height: 1.8;
-  padding: 20px;
+    line-height: 1.8;
+    padding: 20px;
 }
 .job-summaryBox-complex {
-  border-left: 1px solid #A8A8A8;
+    border-left: 1px solid #a8a8a8;
 }
 
 /* 지원하기 / 즐겨찾기 버튼 */
 .job-action-apply,
-.job-action-favorite, .job-action-print, .job-action-list {
-  width: 200px;
-  font-size: 1.1rem;
-  padding: 10px;
-  border-radius: 10px;
-  font-weight: 500;
+.job-action-favorite,
+.job-action-print,
+.job-action-list {
+    width: 200px;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 500;
 }
-.job-action-favorite, .job-action-print, .job-action-list {
-  background-color: #777777;
-  border: none;
+.job-action-favorite,
+.job-action-print,
+.job-action-list {
+    background-color: #777777;
+    border: none;
 }
-.job-action-favorite:hover, .job-action-print:hover, .job-action-list:hover {
-  background-color: #777777 !important;
+.job-action-favorite:hover,
+.job-action-print:hover,
+.job-action-list:hover {
+    background-color: #777777 !important;
 }
 
 /* ================================
    탭 (상세요강 / 단지정보)
 ================================ */
 .nav-tabs .nav-link {
-  color: #555;
-  font-weight: 500;
-  width: 150px;
+    color: #555;
+    font-weight: 500;
+    width: 150px;
 }
 .nav-tabs .nav-link.active {
-  color: #0071f3;
-  font-weight: 700;
-  background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
+    color: #0071f3;
+    font-weight: 700;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
 }
 .nav-tabs .nav-link:hover {
-  color: #0071f3;
+    color: #0071f3;
 }
 
 /* ================================
    상세요강 테이블
 ================================ */
 .job-detail__table th {
-  width: 20%;
-  background-color: #f8f9fa;
-  font-weight: 600;
+    width: 20%;
+    background-color: #f8f9fa;
+    font-weight: 600;
 }
 .job-detail__table td {
-  width: 30%;
-  vertical-align: middle;
+    width: 30%;
+    vertical-align: middle;
 }
 
 /* ================================
    단지정보 섹션
 ================================ */
 .job-complex__wrap {
-  margin-top: 1.5rem;
+    margin-top: 1.5rem;
 }
 .complex-header-title {
-  font-weight: 700;
-  font-size: 16px;
-  margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 1rem;
 }
 .table-section-title {
-  background-color: #f8f9fa;
-  font-weight: 700;
-  text-align: left;
+    background-color: #f8f9fa;
+    font-weight: 700;
+    text-align: left;
 }
 .table-section-subtitle {
     color: #de0000 !important;
     border-left: none !important;
 }
 .job-complex__table th {
-  background-color: #fafafa;
-  color: #222;
-  font-weight: 600;
-  width: 20%;
-  vertical-align: middle;
+    background-color: #fafafa;
+    color: #222;
+    font-weight: 600;
+    width: 20%;
+    vertical-align: middle;
 }
 .job-complex__table td {
-  color: #333;
-  background-color: #fff;
-  vertical-align: middle;
+    color: #333;
+    background-color: #fff;
+    vertical-align: middle;
 }
 .job-complex__table th,
 .job-complex__table td {
-  padding: 10px 12px;
-  line-height: 1.6;
+    padding: 10px 12px;
+    line-height: 1.6;
 }
 .job-complex__table + .job-complex__table {
-  margin-top: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 /* 상단 브라우저 느낌 */
 .modal-content {
-    background-color: #F9FAFC;
+    background-color: #f9fafc;
 }
 .apply-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #1f1f1f;
-  color: #fff;
-  padding: 10px 15px;
-  font-size: 14px;
-  border-radius: 6px 6px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f1f1f;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 6px 6px 0 0;
 }
 
 /* URL 텍스트 */
 .apply-url {
-  opacity: 0.9;
-  font-family: monospace;
+    opacity: 0.9;
+    font-family: monospace;
 }
 
 /* 닫기 버튼 */
 .apply-close {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 18px;
-  cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
 }
 /* 버튼 영역 */
 .apply-btn-wrap {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 /* 지원하기 버튼 */
 .apply-submit-btn {
-  background-color: #373F57;
-  color: #fff;
-  border: none;
-  padding: 12px 40px;
-  font-size: 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.2s ease;
+    background-color: #373f57;
+    color: #fff;
+    border: none;
+    padding: 12px 40px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 /* hover */
 .apply-submit-btn:hover {
-  background-color: #2c3247;
+    background-color: #2c3247;
 }
 
 #join {
-    background-color: #F9FAFC;
+    background-color: #f9fafc;
 }
 .join-img {
     text-align: center;
@@ -725,4 +737,148 @@
 }
 .career_import_content {
     padding: 0 !important;
+}
+
+/* =========================
+   🔹 모달 전체
+========================= */
+.sample-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: none;
+}
+
+/* 배경 */
+.sample-modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* 내용 */
+.sample-modal__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 520px;
+    max-width: 90%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* 텍스트 */
+.sample-modal__content p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+/* 버튼 */
+.sample-modal__btn {
+    width: 160px;
+    height: 48px;
+    border-radius: 10px;
+    border: none;
+    background: var(--color-primary);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.sample-modal__btn:hover {
+    background: var(--color-primary-hover);
+}
+
+/* 활성화 */
+.sample-modal.show {
+    display: block;
+}
+
+/* =========================
+   🔹 모달 전체
+========================= */
+.custom-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 9999;
+}
+
+.custom-modal.show {
+    display: block;
+}
+
+/* 배경 */
+.custom-modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* 내용 박스 */
+.custom-modal__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    max-width: 90%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px 20px 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* X 버튼 */
+.custom-modal__close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* 내용 */
+.custom-modal__body {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+/* 하단 버튼 */
+.custom-modal__btn {
+    width: 200px;
+    height: 42px;
+    border: none;
+    border-radius: 10px;
+    background: var(--color-primary);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+.custom-modal__btn:hover {
+    background: var(--color-primary-hover);
 }
