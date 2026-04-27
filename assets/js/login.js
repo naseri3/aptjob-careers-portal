@@ -95,14 +95,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-
-// ==============================
-// ✅ careers 진입 시 강제 로그아웃
-// ==============================
-document.addEventListener("DOMContentLoaded", function () {
-  // careers 페이지에서만 실행
-  if (location.pathname.includes("careers")) {
-    localStorage.removeItem("loginUser");
-  }
-});
